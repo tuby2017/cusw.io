@@ -1,0 +1,86 @@
+a {
+	display:grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+      justify-content: space-between;
+    position: relative;
+    overflow: hide;
+    padding: 0.5em 1em;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    font: italic bold 12px/30px Georgia, serif;
+
+/*
+    color: #333;
+*/
+	color: white;
+    cursor: pointer;
+    outline: none;
+    background-color: #ececec;
+    background-color: black;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    background-image:none;
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
+    border-radius: 0.2em;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+a:hover,
+a:focus,
+.z:focus,
+.z:active,
+:target,
+a:active,
+a.active {
+    border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #3c8dde;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+    }
+
+
+.z:focus,
+.z:active,
+:target,
+a:active,
+a.active {    
+    border-color: #2a65a0;
+    border-bottom-color: #3884cd;
+    background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+    background-image: -moz-linear-gradient(#3072b3, #599bdc);
+    background-image: -ms-linear-gradient(#3072b3, #599bdc);
+    background-image: -o-linear-gradient(#3072b3, #599bdc);
+    background-image: linear-gradient(#3072b3, #599bdc);
+}
+
+/* overrides extra padding on button elements in Firefox */
+a::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+:target,a:active{font-size: 110%;position:relative; z-index:3;padding-top:120px;
+	background: linear-gradient(bottom, #3072b3 0%, #599bdc 100%);
+	border-style:none;background: linear-gradient(to bottom, rgba(48,114,179,0), rgba(89,155,220,1));
+/*
+padding-top:50px;display:block
+*/
+}
