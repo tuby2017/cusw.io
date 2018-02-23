@@ -4,8 +4,8 @@ var g;
 var b;
 var k = location.href;
 function preload() {
-//~	txt = loadStrings("x-lyrics.txt");
-	txt = loadStrings("https://raw.githubusercontent.com/tuby2017/tuby2017.github.io/master/p5js-sketch/x-lyrics.txt");
+	txt = loadStrings("x-lyrics.txt");
+//~	txt = loadStrings("https://raw.githubusercontent.com/tuby2017/tuby2017.github.io/master/p5js-sketch/x-lyrics.txt");
 }
 
 function setup(){
