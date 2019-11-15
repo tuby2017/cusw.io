@@ -1,0 +1,21 @@
+http://codylittlewood.com/setting-up-an-external-monitor-on-macbook-pro-running-arch-linux-and-awesomewm/
+https://github.com/intel/thunderbolt-software-user-space/issues/65
+	https://manpages.debian.org/testing/thunderbolt-tools/tbtadm.1.en.html
+	##fail!!
+	echo -e "http://ftp.br.debian.org/debian/pool/main/b/boost1.67/libboost-system1.67.0_1.67.0-13_amd64.deb\nhttp://ftp.br.debian.org/debian/pool/main/b/boost1.67/libboost-filesystem1.67.0_1.67.0-13_amd64.deb\nhttp://ftp.br.debian.org/debian/pool/main/t/thunderbolt-tools/thunderbolt-tools_0.9.3-4+b1_amd64.deb" > list.txt
+	wget -i list.txt
+	sudo dpkg -i /path/to/deb/file
+	sudo apt-get install -f
+	echo 'ACTION=="add", SUBSYSTEM=="thunderbolt", ATTR{authorized}=="0", ATTR{authorized}="1"' > 99
+	sudo cp 99 /etc/udev/rules.d/99-removable.rules
+	udevadm control --reload
+	#/sys/bus/thunderbolt/devices/0-0/authorized
+	tbtadm topology; #devices
+	xrandr -q
+	sudo echo 1 > /sys/bus/pci/rescan
+~~~~~~~
+https://9to5mac.com/2016/11/21/tb3-enabler-enable-unsupported-thunderbolt-3-devices-hack-macbook-pro/
+	https://github.com/rgov/Thunderbolt3Unblocker
+	https://github.com/KhaosT/tb3-enabler
+https://github.com/Floris497/mac-pixel-clock-patch-V2
+https://gist.github.com/erichrobinson/9755ba1f3ec45b289c40
