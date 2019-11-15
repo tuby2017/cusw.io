@@ -1,0 +1,144 @@
+fetch on 2019 November 15.
+You-Dont-Know-JS by getify, 111K like.
+A book series on Java-Script.
+
+Shell, oh-my-zsh by robbyrussell, 98K like.
+A delightful community-driven  framework for managing your zsh configuration. Includes 200+ optional plugins , over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community.
+
+gitignore by github, 91K like.
+A collection of useful .gitignore templates.
+
+TypeScript, vscode by microsoft, 86K like.
+Visual Studio Code.
+
+free-programming-books-zh CN by justjavac, 59K like.
+Free computer programming Chinese books, welcome to contribute.
+
+Java-Script, three dot JS; by mrdoob, 56K like.
+Java-Script 3D library.
+
+Java-Script, puppeteer by GoogleChrome, 55K like.
+Headless Chrome Node dot JS; API.
+
+build-your-own-x by danistefanovic, 55K like.
+Build your own.
+
+Java-Script, 30-seconds-of-code by 30-seconds, 51K like.
+A curated collection of useful Java-Script snippets that you can understand in 30 seconds or less.
+
+Java-Script, incubator-echarts by apache, 37K like.
+A powerful, interactive charting and visualization library for browser.
+
+awesome-public-datasets by awesomedata, 36K like.
+A topic-centric list of HQ open datasets. PR ☛☛☛
+
+awesome-interview-questions by MaximAbramchuck, 31K like.
+A curated awesome list of lists of interview questions. Feel free to contribute!
+
+Best-websites-a-programmer-should-visit by sdmg15, 28K like.
+Some useful websites for programmers.
+
+TypeScript, code-server by cdr, 25K like.
+Run VS Code on a remote server.
+
+the-book-of-secret-knowledge by trimstray, 24K like.
+A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.
+
+PHP, SecLists by danielmiessler, 21K like.
+SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many.
+
+Java, Java by TheAlgorithms, 19K like.
+All Algorithms implemented in Java.
+
+trackerslist by ngosang, 17K like.
+Updated list of public BitTorrent trackers.
+
+Java, HanLP by hankcs, 16K like.
+Natural language processing Chinese participles part-of-speech tagging named entity recognition dependency syntax analysis new word discovery keyword phrase extraction automatic summary text classification clustering Pinyin.
+
+V, v by vlang, 13K like.
+Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero dependencies. Stable 0.2 release in November 2019.
+
+Python, gpt-2 by openai, 9.7K like.
+Code for the paper \Language Models are Unsupervised Multitask Learners\
+
+awesome-programming-books by jobbole, 9.4K like.
+Classic programming books, including: computer systems and networks, system architecture, algorithms and data structures, front-end development, back-end development, mobile development, databases, testing, projects and teams, programmers' professional pract.
+
+from coder to expert by 0voice, 8.5K like.
+The latest summary in 2019, from programmers to CTO, from professional to excellence, sharing the internal pdf and PPT of the big cattle company.
+
+xg2xg by jhuangtw-dev, 7.9K like.
+by ex-googlers, for ex-googlers - a lookup table of similar tech & services.
+
+Java, fullstack-tutorial by frank-lam, 7.1K like.
+Fullstack tutorial 2019, background technology stack / architect road / full stack development community, spring recruit / autumn recruit / school recruit / interview.
+
+books by programthink, 6.6K like.
+[Programming] The list of e-books collected (multiple subjects, including download links)
+
+Go, ultimate-go by hoanhan101, 6.3K like.
+Ultimate Go study guide, with heavily documented code and programs analysis all in 1 place →
+
+awesome-architecture by toutiaoio, 5.6K like.
+Architect technical map to help you become an architect soon.
+
+Python, detectron2 by facebookresearch, 5.5K like.
+Detectron2 is FAIR's next-generation research platform for object detection and segmentation.
+
+Jupyter Notebook, google-research by google-research, 5.4K like.
+Google AI Research.
+
+Cookbook by andkret, 5.3K like.
+The Data Engineering Cookbook.
+
+chromium by chromium, 5K like.
+The official GitHub mirror of the Chromium source.
+
+reverse-interview-zh by yifeikong, 4.9K like.
+Technical interview, finally ask the interviewer's words.
+
+Python, streamlit by streamlit, 4.9K like.
+Streamlit — The fastest way to build custom ML tools.
+
+Jupyter Notebook, handson-ml2 by ageron, 4.1K like.
+A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in Python using Scikit-Learn, Keras and TensorFlow 2.
+
+Python, Ultra-Light-Fast-Generic-Face-Detector-1MB by Linzaer, 3.7K like.
+1MB lightweight face detection model.
+
+Profiles by ConnersHua, 3.5K like.
+
+PENTESTING-BIBLE by blaCCkHatHacEEkr, 3.2K like.
+This repository was created and developed by Ammar Amer at cry__pto Only. Updates to this repository will continue to arrive until the number of links reaches 10000 links & 10000 pdf files .Learn Ethical Hacking and penetration testing .hundreds of ethical.
+
+C++, llvm-project by llvm, 2.6K like.
+The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Note: the repository does not accept github pull requests at this moment. Please submit your patches at.
+
+Java-Script, pwnagotchi by evilsocket, 2.5K like.
+ - Deep Reinforcement Learning instrumenting bettercap for WiFi pwning.
+
+Java, gpmall by 2227324689, 2.5K like.
+[咕泡学院实战项目]-E-commerce platform based on SpringBoot+Dubbo-microservice architecture, mall, e-commerce, micro-service, high concurrency, kafka, Elasticsearch.
+
+Java-Interview by gzc426, 2K like.
+Java interview will be straight through BAT.
+
+Java-Interview by gzc426, 2K like.
+Java interview will be straight through BAT.
+
+Beginner-Network-Pentesting by hmaverickadams, 1.5K like.
+Notes for Beginner Network Pentesting Course.
+
+Python, albert zh by brightmart, 1.5K like.
+A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS, Massive Chinese Pre-training ALBERT Model.
+
+Windows-classic-samples by microsoft, 1.5K like.
+This repo contains samples that demonstrate the API used in Windows classic desktop applications.
+
+spec by oam-dev, 741 like.
+The Open Application Model specification.
+
+docs by dapr, 299 like.
+User documentation for Dapr.
+
