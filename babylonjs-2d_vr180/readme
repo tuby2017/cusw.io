@@ -1,3 +1,5 @@
+vr180 video texture projected on sphere using https://www.babylonjs-playground.com/#SQ5UC1#25 from https://forum.babylonjs.com/t/180-degree-3d-video-vr180-support/4681/5, no npm required. Test w/ free videos from vuze and mettle. 
+
 
 Gui does not work, video height over 2048 px won't work either. Video 
 plays in loop. Mouse drag, scroll, arrow keys to move the camera. Slight
