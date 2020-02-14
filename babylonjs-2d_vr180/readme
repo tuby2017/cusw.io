@@ -1,0 +1,8 @@
+
+Gui does not work, video height over 2048 px won't work either. Video 
+plays in loop. Mouse drag, scroll, arrow keys to move the camera. Slight
+ edit to use 'a' for play/pause but do few dragging on the video first. 
+Video splits in top/bottom changes halfDomeMode to false.
+ Same w/ momoscopic video, but result looks like barrel distortion when 
+zoomed out is much drastic. 6500 kb/s average video bitrate looks good 
+under sufficient lighting, 23-30 fps is good enough.  
