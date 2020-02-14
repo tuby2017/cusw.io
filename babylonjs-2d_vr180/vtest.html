@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Babylon.js sample code</title>
+
+        <!-- Babylon.js -->
+<!--
+<script src="ammo.js"></script>
+<script src="babylon.gui.min.js"></script>
+<script src="babylon.inspector.bundle.js"></script>
+-->
+<script src="babylon.js"></script>
+<script src="babylonjs.loaders.js"></script>
+<script src="babylonjs.materials.min.js"></script>
+<script src="babylonjs.postProcess.min.js"></script>
+<script src="babylonjs.proceduralTextures.min.js"></script>
+<script src="babylonjs.serializers.min.js"></script>
+<script src="cannon.js"></script>
+<script src="dat.gui.min.js"></script>
+<script src="earcut.min.js"></script>
+<script src="Oimo.js"></script>
+<script src="pep.min.js"></script>
+
+        <style>
+            html, body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+            
+        </style>
+    </head>
+<body>
+<!--https://forum.babylonjs.com/t/responsive-web-page/2013/2 -->
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("renderCanvas");
+	var ispause=false;
+
+        var engine = null;
+        var scene = null;
+        var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true }); };
+        var createScene = function () {
+
+            var scene = new BABYLON.Scene(engine);
+//https://doc.babylonjs.com/api/classes/babylon.arcrotatecamera
+            var camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2,  Math.PI / 2, 250, BABYLON.Vector3.Zero(), scene);
+            camera.attachControl(canvas, true);
+        	camera.speed = 1000;
+            var videoDome = new BABYLON.VideoDome(
+                "videoDome",
+                ["vr180.mp4"],
+                //["TravelTheWorldInVR-cut2.mp4"],
+                {
+                    resolution: 32,
+                    size: 500,
+                    clickToPlay: false,
+                    halfDomeMode: true
+                },
+                scene
+            );
+
+//https://doc.babylonjs.com/how_to/360videodome#180-video
+			//videoDome.videoMode = BABYLON.VideoDome.MODE_MONOSCOPIC;
+			videoDome.videoMode = BABYLON.VideoDome.MODE_SIDEBYSIDE;
+			// or
+			//videoDome.videoMode = BABYLON.VideoDome.MODE_TOPBOTTOM; //^^halfDome =false
+
+            videoDome.videoTexture.inertia=0;
+            videoDome.videoTexture.fovMultiplier=1.5; //0.8 ,1.5
+            videoDome.videoTexture.uScale = 1; //1
+	
+
+//			const { POINTERDOWN, POINTERMOVE, pointerup } = BABYLON.PointerEventTypes;
+//		    scene.onPrePointerObservable.add(() => console.log('up'), pointerup, false);
+//	scene.onPointerDown = function(){
+//	return false}
+
+	scene.onKeyboardObservable.add((kbInfo) => {
+		switch (kbInfo.type) {
+			case BABYLON.KeyboardEventTypes.KEYDOWN: 
+				switch (kbInfo.event.key) {
+	case "a":
+	case "A":
+		if (ispause == true){
+			ispause = false //ispause ? false : true; 
+			videoDome.videoTexture.video.play();
+			//scene.attachControl(canvas,true)
+		}
+		else {
+		videoDome.videoTexture.video.pause();
+			ispause = true; console.log('ewe');
+			//scene.detachControl(canvas)
+		}
+	break
+	}break}});	
+
+        
+// video res bigger than 2000x2000 webgl error?            
+            scene.onBeforeCameraRenderObservable.remove(videoDome._onBeforeCameraRenderObserver);
+            scene.onBeforeCameraRenderObservable.add((camera) => {
+                            videoDome.videoTexture.uOffset = camera.isRightCamera ? 0.25 : 0;
+                        });
+            
+            return scene;
+        };
+
+        engine = createDefaultEngine();
+        if (!engine) throw 'engine should not be null.';
+        scene = createScene();
+
+        engine.runRenderLoop(function () {
+            if (scene) {
+                scene.render();
+            }
+        });
+
+        // Resize
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+
+    </script>
+</body>
+</html>
